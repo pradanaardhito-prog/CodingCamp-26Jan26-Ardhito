@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <!-- Link ke file CSS eksternal -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome untuk ikon (opsional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <div class="logo-img">Rv</div>
+                    <span>My Website</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#profile">Our Profile</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#message">Message Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home">
+        <div class="container hero">
+            <!-- JavaScript akan mengisi nama di sini -->
+            <h1 id="welcome-title">Hi [Name], Welcome To Website</h1> 
+            <p>Ini adalah website latihan pertama</p>
+            
+            <div class="banner-placeholder">
+                <div class="banner-text"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR PROFILE SECTION -->
+    <section id="profile">
+        <div class="container">
+            <h2>Our Profile</h2>
+            <div class="profile-content">
+                <div class="profile-text">
+                    <h3>About Me</h3>
+                    <p>My name is Ardhito Habib Pradana, a student majoring in Archiving and Digital Information Studies at the Faculty of Vocational Studies. I come from Sidoarjo. I am interested in documentation and editing, and am accustomed to working neatly and meticulously. I am able to work in a disciplined and responsible manner, and I adhere to work procedures well. Furthermore, I am prepared to work both individually and in a team, possess good physical endurance, and am ready to support operational activities such as packing goods effectively and efficiently.</p>
+                    
+                    <h3>Vision & Mission</h3>
+                    <p><strong>Vision:</strong> Becoming a person with strong character and upholding the values ​​of honesty and responsibility.</p>
+                    <p><strong>Mission:</strong> Maintain consistency between values ​​and actions by always acting with integrity, respecting others without ignoring one's own principles, and continuing to develop maturity in one's attitude and decision-making.</p>
+                </div>
+                <div class="profile-img"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HEADQUARTER SECTION -->
+    <section id="hq">
+        <div class="container">
+            <h2>Our Headquarter</h2>
+            <div class="hq-container">
+                <div class="hq-item">
+                    <div class="hq-circle">
+                    <img src="jkt.jpg" alt="Jakarta Office">
+                    </div>
+                    <div class="hq-label">Jakarta</div>
+                </div>
+                <div class="hq-item">
+                    <div class="hq-circle">
+                         <img src="bdg.jpg" alt="Bandung Office">
+                    </div>
+                    <div class="hq-label">Bandung</div>
+                </div>
+                <div class="hq-item">
+                    <div class="hq-circle">
+                         <img src="sby.jpg" alt="Surabaya Office">
+                    </div>
+                    <div class="hq-label">Surabaya</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MESSAGE US SECTION -->
+    <section id="message">
+        <div class="container">
+            <h2>Message Us</h2>
+            <div class="message-section-container">
+                
+                <!-- Form Kiri -->
+                <div class="form-container">
+                    <form id="message-form" onsubmit="return validateForm()">
+                        
+                        <div class="form-group">
+                            <label class="form-label">Nama :</label>
+                            <div class="form-input-wrapper">
+                                <input type="text" id="name" placeholder="Nama">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Tanggal Lahir :</label>
+                            <div class="form-input-wrapper">
+                                <input type="date" id="dob">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Jenis Kelamin :</label>
+                            <div class="form-input-wrapper radio-group">
+                                <input type="radio" id="male" name="gender" value="Laki-Laki">
+                                <label for="male">Laki-Laki</label>
+                                <input type="radio" id="female" name="gender" value="Perempuan">
+                                <label for="female">Perempuan</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Pesan :</label>
+                            <div class="form-input-wrapper">
+                                <textarea id="message-text" placeholder="Pesan"></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+
+                <!-- Output Kanan -->
+                <div class="output-container">
+                    <div id="output-result">
+                        <!-- Hasil submit akan muncul di sini -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            Created By RevoU Student
+        </div>
+    </footer>
+
+    <!-- Link ke file JavaScript eksternal -->
+    <script src="js/script.js"></script>
+</body>
+</html>
